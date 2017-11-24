@@ -12,6 +12,7 @@ let userController = {
  * @param  {Function} next [description]
  * @return {[type]}        [description]
  */
+
 userController.doTest = (req,res,next)=>{
     db.q('select * from album_dir',[],(err,data)=>{
         if(err)return next(err);
